@@ -1,6 +1,6 @@
-// #################
-// ## ITERATION 1 ##
-// #################
+// ###################################
+// ## ITERATION 1: Create the Cards ##
+// ###################################
 
 // Suspects Array
 
@@ -157,9 +157,9 @@ const weaponsArray = [
   }
 ];
 
-// #################
-// ## ITERATION 2 ##
-// #################
+// #####################################
+// ## ITERATION 2: Create the Mystery ##
+// #####################################
 
 function selectRandom(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -173,9 +173,13 @@ function pickMystery() {
   return mystery;
 }
 
-// ITERATION 3
+// #####################################
+// ## ITERATION 3: Reveal the Mystery ##
+// #####################################
 
-function revealMystery() {}
+function revealMystery(envelope) {
+  return `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`;
+}
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
